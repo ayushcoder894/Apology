@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Mean a Lot to Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            color: #333;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        audio {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>You know ki i didnt mean to do it  💖</h2>
+        <p>I know saying "sorry" isn't enough, so instead, I want to remind you how special you are to me sakshii.</p>
+        <button class="btn" onclick="showMessage()">Will you forgive me</button>
+        <p id="message" class="hidden">🌸yess dekha mana liya na tumhe bola hi tha , yaayyyy🌸</p>
+        <audio id="song" class="hidden">
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').classList.remove('hidden');
+            var audio = document.getElementById('song');
+            audio.classList.remove('hidden');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
